@@ -16,11 +16,11 @@
   "routes": [
     {
       "src": "/api/transactions/(.*)",
-      "dest": "/server/api/transactions/$1"
+      "dest": "/server/routes/transactions/$1"
     },
     {
       "src": "/api/budget/(.*)",
-      "dest": "/server/api/budget/$1"
+      "dest": "/server/routes/budget/$1"
     },
     {
       "src": "/(.*)",

@@ -15,12 +15,8 @@
   ],
   "routes": [
     {
-      "src": "/api/transactions/(.*)",
-      "dest": "/server/routes/transactions.js"
-    },
-    {
-      "src": "/api/budget/(.*)",
-      "dest": "/server/routes/budget.js"
+      "src": "/api/(.*)",
+      "dest": "/server/server.js"
     },
     {
       "src": "/(.*)",

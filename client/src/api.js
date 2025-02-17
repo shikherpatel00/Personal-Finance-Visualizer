@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = process.env.NODE_ENV === 'development' ? "http://localhost:5000/api" : `${window.location.origin}/api`;
 
 // Transactions API
 export const getTransactions = async () => axios.get(`${BASE_URL}/transactions`);
